@@ -13,7 +13,8 @@ const app = express();
 const port = process.env.PORT || 3001;
 
 // Enable CORS
-app.use(cors());
+app.use(cors({ origin: "https://your-frontend.vercel.app" }));
+
 
 app.use(express.json());
 
